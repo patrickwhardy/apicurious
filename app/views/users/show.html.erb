@@ -1,0 +1,8 @@
+<p>
+  User show page
+</p>
+<% if current_user %>
+  Hello, <%= current_user.name %>
+<% else %>
+  <%= link_to "Sign in with Strava", strava_login_path %>
+<% end %>
