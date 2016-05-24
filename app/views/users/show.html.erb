@@ -2,7 +2,9 @@
   User show page
 </p>
 <% if current_user %>
-  Hello, <%= current_user.name %>
+  Hello, <%= current_user.first_name + " " + current_user.last_name %>
+  <img src="<%= current_user.avatar %>", height="100px", width="100px" >
+  <%= link_to "Logout", logout_path, method: :delete %>
 <% else %>
   <%= link_to "Sign in with Strava", strava_login_path %>
 <% end %>
