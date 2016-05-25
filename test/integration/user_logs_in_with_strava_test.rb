@@ -2,6 +2,9 @@ require "test_helper"
 class UserLogsInWithStravaTest < ActionDispatch::IntegrationTest
   def setup
     Capybara.app = Apicurious::Application
+    # user = User.new({uid: "15379571"})
+    # user.oauth_token = "fd14cc933a5484cc6918c6f23b20fb7e9924e02f"
+    # ApplicationController.any_instance.stubs(:current_user).returns(user)
     stub_omniauth
   end
 

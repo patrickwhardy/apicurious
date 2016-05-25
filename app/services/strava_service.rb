@@ -7,8 +7,4 @@ class StravaService
   def get_activities
     JSON.parse(@connection.get('athlete/activities').body, symbolize_names: true)
   end
-
-  def get_activity(id)
-    JSON.parse(@connection.get("athlete/activities/#{id}").body, symbolize_names: true)
-  end
 end
