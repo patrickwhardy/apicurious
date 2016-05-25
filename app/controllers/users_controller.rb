@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
 
   def show
-    @user = User.new
+    @user = current_user
+    @activities = Activity.all(@user.oauth_token)
   end
 
 end
