@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.strava.com/api/v3/athlete/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer fd14cc933a5484cc6918c6f23b20fb7e9924e02f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 25 May 2016 22:37:04 GMT
+      Etag:
+      - W/"5ca137d3418b17adaf31f6e9a0608f6c"
+      Set-Cookie:
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTk0OGExY2I2YmQ1MzZmYTViOTE5OTFmMmQ5NDk5ZTEyBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--16df7e35c7b4fd040859d40e1005f0a76d226fff;
+        domain=strava.com; path=/; HttpOnly
+      Status:
+      - 200 OK
+      Strava-Athlete-Upload-Version:
+      - c3fc16d6380e3da7d92d09f90912ac4a
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '600,30000'
+      X-Ratelimit-Usage:
+      - '4,103'
+      X-Request-Id:
+      - 7744ebc5347490c2a31e092453d9e98e
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":587580715,"resource_state":2,"external_id":"733191D6-FA3E-4E1F-B4FB-67CB5A0E1B39","upload_id":642075209,"athlete":{"id":15379571,"resource_state":1},"name":"Dhs
+        to school","distance":4031.3,"moving_time":540,"elapsed_time":553,"total_elevation_gain":0.0,"type":"Run","start_date":"2016-05-25T14:40:28Z","start_date_local":"2016-05-25T08:40:28Z","timezone":"(GMT-07:00)
+        America/Denver","start_latlng":[39.736867,-105.023706],"end_latlng":[39.749774,-105.000092],"location_city":null,"location_state":null,"location_country":null,"start_latitude":39.736867,"start_longitude":-105.023706,"achievement_count":3,"kudos_count":1,"comment_count":1,"athlete_count":1,"photo_count":0,"map":{"id":"a587580715","summary_polyline":"kbpqFdm_`SgGeMS_LcDmFiWwGTqBeCAcC_Eca@}CgN{XsCM_HsIzNoOnPoVbEgB_@eEyCiEmD`B","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":null,"average_speed":7.465,"max_speed":17.4,"has_heartrate":false,"elev_high":1588.0,"elev_low":1575.5,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":586924687,"resource_state":2,"external_id":"B6F9AEE2-2283-429F-BFA0-39E8ABC4C527","upload_id":641404943,"athlete":{"id":15379571,"resource_state":1},"name":"Going
+        home","distance":4655.2,"moving_time":726,"elapsed_time":738,"total_elevation_gain":25.3,"type":"Run","start_date":"2016-05-24T21:07:32Z","start_date_local":"2016-05-24T15:07:32Z","timezone":"(GMT-07:00)
+        America/Denver","start_latlng":[39.74853,-105.001296],"end_latlng":[39.731964,-105.027531],"location_city":null,"location_state":null,"location_country":null,"start_latitude":39.74853,"start_longitude":-105.001296,"achievement_count":1,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a586924687","summary_polyline":"ikrqFba{_SdBgAa@dD}QdQuKdSmE`Av@vB{@hCn\\re@nHjC|VY``@fLt@fM~Mjc@|Dh@B|DzSW","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":null,"average_speed":6.412,"max_speed":14.4,"has_heartrate":false,"elev_high":1601.3,"elev_low":1575.3,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":585759053,"resource_state":2,"external_id":"65DA0B17-5302-41C9-A9E8-2FA9506B754D","upload_id":640210072,"athlete":{"id":15379571,"resource_state":1},"name":"Turing
+        - home","distance":4615.5,"moving_time":663,"elapsed_time":663,"total_elevation_gain":25.2,"type":"Ride","start_date":"2016-05-23T19:51:39Z","start_date_local":"2016-05-23T13:51:39Z","timezone":"(GMT-07:00)
+        America/Denver","start_latlng":[39.748522,-105.00113],"end_latlng":[39.731987,-105.027531],"location_city":null,"location_state":null,"location_country":null,"start_latitude":39.748522,"start_longitude":-105.00113,"achievement_count":0,"kudos_count":1,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a585759053","summary_polyline":"gkrqF``{_Sa@x@xBcBL|AiGdEeAbEq[~^tNhP|K|Rte@pDrBlCDfCdWtHzDfXfOfYZlE|S?","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":null,"average_speed":6.962,"max_speed":12.5,"device_watts":false,"has_heartrate":false,"elev_high":1601.3,"elev_low":1575.9,"total_photo_count":0,"has_kudoed":false,"workout_type":10},{"id":585738678,"resource_state":2,"external_id":"780A2EB1-F1E7-41F9-9D8A-DDDEF0730DBA","upload_id":640188799,"athlete":{"id":15379571,"resource_state":1},"name":"Turing
+        block","distance":293.6,"moving_time":127,"elapsed_time":142,"total_elevation_gain":0.0,"type":"Run","start_date":"2016-05-23T19:42:56Z","start_date_local":"2016-05-23T13:42:56Z","timezone":"(GMT-07:00)
+        America/Denver","start_latlng":[39.74973,-105.000245],"end_latlng":[39.749715,-105.000102],"location_city":null,"location_state":null,"location_country":null,"start_latitude":39.74973,"start_longitude":-105.000245,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a585738678","summary_polyline":"yrrqFpzz_SpB_CmBbB","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":null,"average_speed":2.312,"max_speed":9.3,"has_heartrate":false,"elev_high":1584.0,"elev_low":1582.4,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":586913004,"resource_state":2,"external_id":"DD589F76-479B-4A5C-B371-8BF68B10CFBE","upload_id":641392993,"athlete":{"id":15379571,"resource_state":1},"name":"Evening
+        Ride","distance":5245.6,"moving_time":1483,"elapsed_time":34543924,"total_elevation_gain":367.4,"type":"Ride","start_date":"2015-04-21T01:34:52Z","start_date_local":"2015-04-20T18:34:52Z","timezone":"(GMT-08:00)
+        America/Los_Angeles","start_latlng":[44.381594,-121.778761],"end_latlng":[39.748545,-105.001305],"location_city":null,"location_state":null,"location_country":null,"start_latitude":44.381594,"start_longitude":-121.778761,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a586913004","summary_polyline":"}g{mGh|gfVDoBVjBeBa@DwAcBMkIwKiHqCaCiK`BgEi@_F`AqD_CaF|HkCmGkIoIkEjEcDkKsHpKgKmL}AeF`DsAkDLuFqAy@kQnEyCiCwAl@cE_GuC?mEnIe@vNmAdAgBm@sBeHmHa@{AiDpnk[yoheB|FjF","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":null,"average_speed":3.537,"max_speed":11.2,"device_watts":false,"has_heartrate":false,"elev_high":1648.8,"elev_low":1216.1,"total_photo_count":0,"has_kudoed":false,"workout_type":10},{"id":585724446,"resource_state":2,"external_id":"8D17FBD0-1571-465F-A5E7-C2F124243B76","upload_id":640174256,"athlete":{"id":15379571,"resource_state":1},"name":"Afternoon
+        Ride sistys","distance":22495.7,"moving_time":4513,"elapsed_time":5509,"total_elevation_gain":251.8,"type":"Ride","start_date":"2014-08-24T23:17:04Z","start_date_local":"2014-08-24T16:17:04Z","timezone":"(GMT-08:00)
+        America/Los_Angeles","start_latlng":[44.222326,-121.576048],"end_latlng":[44.287841,-121.553314],"location_city":null,"location_state":null,"location_country":null,"start_latitude":44.222326,"start_longitude":-121.576048,"achievement_count":1,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a585724446","summary_polyline":"od|lGhi`eVyCtKaBzRz@A`CdHyCcJxAgTpBgG~B|KdClCf@bJdBtE`HtHEtJbBjFzFjBjFlKxGjF_Ax@pIfYYxn@bAxL~DlGaGhKMhD~AjJ|F~GdAtE]lXx_@`p@x@dNjGORoCxKgE~LoAlB{I{ApIaNlAaK`Ee@nCuFv@sAqPmJaQiBw@m@qDmPaZdBmEImLcBsFoFiGeBwJdAuG|EiGyFuKPgv@iJsZfA_BoGeFoFgLeGcBqAoD[qLcCqAgEeJoIq_@cTsOmL{TyQqJ{LmNy`@}~@{NoPok@k^gIbEmOq@iw@|QwXyEijCM?tS","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":true,"gear_id":null,"average_speed":4.985,"max_speed":27.2,"device_watts":false,"has_heartrate":false,"elev_high":1340.4,"elev_low":973.0,"total_photo_count":0,"has_kudoed":false,"workout_type":0}]'
+    http_version: 
+  recorded_at: Wed, 25 May 2016 22:37:04 GMT
+recorded_with: VCR 3.0.3
