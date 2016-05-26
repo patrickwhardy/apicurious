@@ -3,7 +3,7 @@
     <div class="card-panel teal">
       <% if current_user %>
         <img src="<%= current_user.avatar %>", height="100px", width="100px" ></br>
-        Hello, <%= "#{current_user.first_name} #{current_user.last_name}" %>
+        Hello, <%= "#{current_user.first_name} #{current_user.last_name}" %>. Check out your activities!
         <ul class="collection">
           <% @activities.each do |activity| %>
             <li class="collection-item"><%= link_to activity.name, activity_path(activity.id) %></li>
