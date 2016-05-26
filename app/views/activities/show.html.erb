@@ -8,3 +8,7 @@ Average Speed(meters per second): <%= @activity.average_speed %><br/>
 Max Speed(meters per second): <%= @activity.max_speed %><br/>
 High Point(m): <%= @activity.elev_high %><br/>
 Low Point(m): <%= @activity.elev_low %><br/>
+
+<div class="container col-md-offset-2">
+  <%= render partial: "layouts/map" %>
+</div>

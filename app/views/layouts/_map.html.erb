@@ -1,0 +1,38 @@
+<%= javascript_tag do %>
+  function trailMap() {
+
+    var map_options = {
+
+      center: new google.maps.LatLng(<%= @activity.start_latitude %>, <%= @activity.start_longitude %>),
+      zoom: 13,
+      mapTypeId: google.maps.MapTypeId.TERRAIN,
+    };
+
+    var map = new google.maps.Map(document.getElementById("google-map"), map_options);
+
+    var startMarker = new google.maps.Marker({
+      position: { lat: <%= @activity.start_latitude %>,
+                  lng: <%= @activity.start_longitude %> },
+      map: map
+    });
+
+    var poly = new google.maps.Polyline({
+      geodesic: true,
+      strokeColor: "#EB7001",
+      strokeWeight: 4,
+      map: map
+    });
+
+    var path = <%= @activity.set_waypoints.to_json.html_safe %>;
+
+    poly.setPath(path);
+
+  };
+<% end %>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS'] %>&callback=trailMap"
+async defer></script>
+
+<div style="margin: 20px;">
+  <div id="google-map" style="width: 77%; height: 300px;"></div>
+</div>
