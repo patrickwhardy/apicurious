@@ -11,9 +11,9 @@ class Activity < OpenStruct
     all(user_token).find { |activity| activity.id.to_s == activity_id }
   end
 
-  # def set_waypoints
-  #   polyline = self[:map][:summary_polyline]
-  #   waypoints = Polylines::decoder.decode_polyline(polyline)
-  #   waypoints.map { |lat, lng| lat: lat, lng: lng }
-  # end
+  def set_waypoints
+    polyline = self[:map][:summary_polyline]
+    waypoints = Polylines::Decoder.decode_polyline(polyline)
+    waypoints.map { |lat, lng| { lat: lat, lng: lng } }
+  end
 end
