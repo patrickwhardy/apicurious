@@ -8,7 +8,6 @@ require 'vcr'
 
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
   VCR.configure do |c|
@@ -16,17 +15,13 @@ class ActiveSupport::TestCase
     c.hook_into :webmock
     c.allow_http_connections_when_no_cassette = true
   end
-  # Add more helper methods to be used by all tests here...
 end
 
 class ActionDispatch::IntegrationTest
   include Capybara::DSL
 
   def stub_omniauth
-    # first, set OmniAuth to run in test mode
     OmniAuth.config.test_mode = true
-    # then, provide a set of fake oauth data that
-    # omniauth will use when a user tries to authenticate:
     OmniAuth.config.mock_auth[:strava] = OmniAuth::AuthHash.new({
       provider: 'strava',
       uid: "15379571",
