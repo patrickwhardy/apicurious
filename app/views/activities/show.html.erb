@@ -1,14 +1,21 @@
-Name: <%= @activity.name %><br/>
-Distance(m): <%= @activity.distance %><br/>
-Moving Time(seconds): <%= @activity.moving_time %><br/>
-Elapsed Time(seconds): <%= @activity.elapsed_time %><br/>
-Total Elevation Gain(m): <%= @activity.total_elevation_gain %><br/>
-Activity Type: <%= @activity.type %><br/>
-Average Speed(meters per second): <%= @activity.average_speed %><br/>
-Max Speed(meters per second): <%= @activity.max_speed %><br/>
-High Point(m): <%= @activity.elev_high %><br/>
-Low Point(m): <%= @activity.elev_low %><br/>
-
-<div class="container col-md-offset-2">
-  <%= render partial: "layouts/map" %>
+<div class="row">
+  <div class="col s12 m10">
+    <div class="card-panel teal">
+      <ul class="collection">
+        <li class="collection-item"><h4><%= @activity.name %></h4></li>
+        <li class="collection-item">Distance(m): <%= @activity.distance %></li>
+        <li class="collection-item">Moving Time(seconds): <%= @activity.moving_time %></li>
+        <li class="collection-item">Elapsed Time(seconds): <%= @activity.elapsed_time %></li>
+        <li class="collection-item">Total Elevation Gain(m): <%= @activity.total_elevation_gain %></li>
+        <li class="collection-item">Activity Type: <%= @activity.type %></li>
+        <li class="collection-item">Average Speed(meters per second): <%= @activity.average_speed %></li>
+        <li class="collection-item">Max Speed(meters per second): <%= @activity.max_speed %></li>
+        <li class="collection-item">High Point(m): <%= @activity.elev_high %></li>
+        <li class="collection-item">Low Point(m): <%= @activity.elev_low %></li>
+      </ul>
+      <div class="container col-md-offset-2">
+        <%= render partial: "layouts/map" %>
+      </div>
+    </div>
+  </div>
 </div>

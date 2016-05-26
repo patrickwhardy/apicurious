@@ -28,6 +28,7 @@ gem "minitest-rails"
 gem 'faraday'
 gem 'polylines'
 gem 'gmaps4rails'
+gem 'materialize-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
